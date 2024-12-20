@@ -1,0 +1,18 @@
+name: Download and Edit TXT File
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # 每小时执行一次
+
+jobs:
+  edit-file:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Download TXT file
+        run: curl -o downloaded_file.m3u https://tv.wqwqwq.sbs/iptv.m3u
+        
+  
