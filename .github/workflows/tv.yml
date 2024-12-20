@@ -14,5 +14,4 @@ jobs:
         
       - name: Download TXT file
         run: curl -o downloaded_file.m3u https://tv.wqwqwq.sbs/iptv.m3u
-        
-  
+      
